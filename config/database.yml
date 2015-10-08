@@ -1,0 +1,22 @@
+development:
+  encoding: utf8
+  adapter: 'postgresql'
+  database: 'todo_dev'
+  username: root
+  password:
+  pool: 2
+
+test:
+  encoding: utf8
+  adapter: 'postgresql'
+  database: 'todo_test'
+  username: root
+  password:
+
+production:
+  encoding: utf8
+  adapter: postgresql
+  database: 'todo_pro'
+  pool: 5
+  username: deploy
+  password:
