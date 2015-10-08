@@ -20,6 +20,9 @@ The app in question is not for any commercial purpose but I'll cover as much as 
 - Haml
 
 ## Steps we're going to take
+1. Setting up our project
+  - git ignore file
+  - git repo
 1. Setting up MithrilJS
 2. Rendering a list of tasks
 3. Adding tasks via a form with enter key
@@ -27,6 +30,8 @@ The app in question is not for any commercial purpose but I'll cover as much as 
 5. Setting up a skeleton rails app
   - gems configuration (haml,pg)
   - configure database to postgres
+  - create migrations (add tables, and some data)
+  - create models
 6. Rendering mithriljs server side
 7. Adding routes to mithriljs (show page)
 8. Create an api to show tasks
