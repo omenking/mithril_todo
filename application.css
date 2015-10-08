@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { background: rgb(240,240,240); font-family: Arial; }
-.container { background: rgb(255,255,255);  border: solid 1px rgb(230,230,230); }
+.container { width: 760px; margin: 0px auto; background: rgb(255,255,255);  border: solid 1px rgb(230,230,230); margin-top: 32px; }
 .header { padding: 16px; border-bottom: solid 1px rgb(230,230,230) }
 .header h1 { font-size: 14px; }
 .task { padding: 16px; border-bottom: solid 1px rgb(230,230,230)}

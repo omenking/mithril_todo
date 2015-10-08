@@ -1,12 +1,16 @@
 app =
   controller: ->
    attrs =
-    form: ->
+    form: (e)->
+      e.preventDefault()
+      return false
     keydown: (e)->
      callback = (ev)->
       if ev.keyCode == 13
+        e.preventDefault()
         console.log 'enter key'
      e.addEventListener('keydown', callback, false);
+    return false
     tasks: [
       {id: 1, name: 'Adding GA'},
       {id: 2, name: 'Install your js framework'},
@@ -15,7 +19,8 @@ app =
   view: (ctrl)->
     content = []
     tasks   = []
-    form = m 'form.task_form', config: ctrl.form,
+    console.log ctrl.form
+    form = m 'form.task_form', onsubmit: ctrl.form,
       m "input[type='text']", placeholder: 'write a task...', config: ctrl.keydown
     for task in ctrl.tasks
       tasks.push m '.task',
